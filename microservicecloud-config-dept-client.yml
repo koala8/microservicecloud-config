@@ -1,8 +1,9 @@
 spring:
    profiles:
      active: dev
+hello: tang6677
 ---
-hello: tang66  
+#hello: tang66  
 server:
   port: 8001
 
