@@ -94,4 +94,5 @@ info:
   company.name: www.tang.com
   build.artifactId: ${project.artifactId}  #注意：通过$project.artifactId$的方式读取不出信息
   build.version: ${project.version}
+hello: tang  
 
