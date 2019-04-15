@@ -30,18 +30,18 @@ spring:
       max-wait-millis: 200
 
    jackson:
-			default-property-inclusion: non_null
-			date-format: yyyy-MM-dd HH:mm:ss
-			time-zone: GMT+8
+     default-property-inclusion: non_null
+     date-format: yyyy-MM-dd HH:mm:ss
+     time-zone: GMT+8
 eureka:
   client: #客户端注册进eureka服务列表内
-	# 实测，如果服务生产者只需要注册进Eureka，而不需要发现服务的话，可以加上 fetch-registry: false ，表示不需要去检索服务。fetchRegistry为True才能从eureka拉取服务列表
-	service-url:
+    # 实测，如果服务生产者只需要注册进Eureka，而不需要发现服务的话，可以加上 fetch-registry: false ，表示不需要去检索服务。fetchRegistry为True才能从eureka拉取服务列表
+    service-url:
 #      defaultZone: http://localhost:7001/eureka
-	   defaultZone: http://eureka7001.com:7001/eureka/
+       defaultZone: http://eureka7001.com:7001/eureka/
   instance:
-	instance-id: dept-8001.com  #自定义服务名称信息
-	prefer-ip-address: true     #访问路径可以显示IP地址
+    instance-id: dept-8001.com  #自定义服务名称信息
+    prefer-ip-address: true     #访问路径可以显示IP地址
 
 info:
   app.name: atguigu-microservicecloud-springcloudconfig02
@@ -61,33 +61,33 @@ mybatis:
 spring:
    profiles: test
    application:
-	name: microservicecloud-config-dept-client
+     name: microservicecloud-config-dept-client
    datasource:
-	type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
-	driver-class-name: com.mysql.cj.jdbc.Driver             # mysql驱动包
-	url: jdbc:mysql://localhost:3306/clouddb02?characterEncoding=utf-8&serverTimezone=UTC     # 数据库名称
-	username: root
-	password: tang
-	dbcp2:
-	  min-idle: 5                                           # 数据库连接池的最小维持连接数
-	  initial-size: 5                                       # 初始化连接数
-	  max-total: 5                                          # 最大连接数
-	  max-wait-millis: 200                                  # 等待连接获取的最大超时时间
+        type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
+        driver-class-name: com.mysql.cj.jdbc.Driver             # mysql驱动包
+        url: jdbc:mysql://localhost:3306/clouddb02?characterEncoding=utf-8&serverTimezone=UTC     # 数据库名称
+        username: root
+        password: tang
+        dbcp2:
+          min-idle: 5                                           # 数据库连接池的最小维持连接数
+          initial-size: 5                                       # 初始化连接数
+          max-total: 5                                          # 最大连接数
+          max-wait-millis: 200                                  # 等待连接获取的最大超时时间
 
    jackson:
-			default-property-inclusion: non_null
-			date-format: yyyy-MM-dd HH:mm:ss
-			time-zone: GMT+8
+     default-property-inclusion: non_null
+     date-format: yyyy-MM-dd HH:mm:ss
+     time-zone: GMT+8
 
 eureka:
   client: #客户端注册进eureka服务列表内
-	# 实测，如果服务生产者只需要注册进Eureka，而不需要发现服务的话，可以加上 fetch-registry: false ，表示不需要去检索服务。fetchRegistry为True才能从eureka拉取服务列表
-	service-url:
+# 实测，如果服务生产者只需要注册进Eureka，而不需要发现服务的话，可以加上 fetch-registry: false ，表示不需要去检索服务。fetchRegistry为True才能从eureka拉取服务列表
+    service-url:
 #      defaultZone: http://localhost:7001/eureka
-	   defaultZone: http://eureka7001.com:7001/eureka/
+       defaultZone: http://eureka7001.com:7001/eureka/
   instance:
-	instance-id: dept-8001.com  #自定义服务名称信息
-	prefer-ip-address: true     #访问路径可以显示IP地址
+    instance-id: dept-8001.com  #自定义服务名称信息
+    prefer-ip-address: true     #访问路径可以显示IP地址
 
 info:
   app.name: atguigu-microservicecloud-springcloudconfig02
